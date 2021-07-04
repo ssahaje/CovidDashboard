@@ -77,7 +77,7 @@ df = pd.DataFrame({'District': District_List,
 # Print the dataframe
 print(df)
 total = ['{:,}'.format(T_Confirmed), '{:,}'.format(T_Active),
-         '{:,}'.format(T_Recovered), '{:,}'.format(T_Deceased), Overall_Recovery_Rate]
+         '{:,}'.format(T_Recovered), '{:,}'.format(T_Deceased), Overall_Recovery_Rate, 'Not Available']
         #, '{:,}'.format(Vaccination_Till_Date)]
 
 df.to_excel('district_data.xlsx', index=False)
