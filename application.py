@@ -11,7 +11,7 @@ url = "http://api.covid19india.org/csv/latest/vaccine_doses_statewise.csv"
 df = pd.read_csv(url)
 Vaccination_Till_Date = df.iat[37, 98]
 print(Vaccination_Till_Date)
-'''Vaccination till date Ends here'''
+'''Vaccination till date Ends here - But currently not available'''
 
 response = requests.get('https://api.covid19india.org/state_district_wise.json')
 data = response.json()
